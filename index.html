@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="interface.css">
+    <link rel="icon" type="image/png" href="tastyIcon.png">
+    <title>Tasty Incremental</title>
+  </head>
+
+  <body>
+    <button onclick="getOregano(1000)">Dev Powers</button>
+    <div class="basic_resources">
+      <center><u><h3>Basic Resources</h3></u></center>
+      <!--Salt Water-->
+      <button onclick="getSaltWater(1)" onclick="getDifference(turtle_salt_water_per_sec, crab_salt_per_sec, salt_water_difference)" class="salt_water">Get Salt Water</button>
+      <div class="salt_water_stats">
+        <span id="num_salt_water">Salt Water: 0ml</span>
+        <span id="salt_water_per_sec">Per Sec: 0ml/s</span>
+      </div>
+      <!--Salt-->
+      <div></div>
+      <button onclick="dryWater(1)" class="salt">Dry Salt Water</button>
+      <div class="salt_stats">
+        <span id="num_salt">Salt: 0g</span>
+        <span id="salt_per_sec">Per Sec: 0g/s</span>
+      </div>
+    </div>
+
+    <div class="basic_producers">
+      <center><u><h3>Basic Producers</h3></u></center>
+      <!--Turtles-->
+      <button onclick="buyTurtle()" class="turtle">Buy Turtle</button>
+      <div class="turtle_stats">
+        <span id="num_turtles">Turtles: 0</span>
+        <span id="turtle_cost">Cost: 10ml water</span>
+        <span id="turtle_salt_water_per_sec">Per Sec: 0ml/s</span>
+      </div>
+      <!--Crabs-->
+      <div></div>
+      <button onclick="buyCrab()" class="crab">Buy Crab</button>
+      <div class="crab_stats">
+        <span id="num_crabs">Crabs: 0</span>
+        <span id="crab_cost">Cost: 10g salt</span>
+        <span id="crab_salt_per_sec">Per Sec: 0g/s</span>
+      </div>
+    </div>
+
+    <div class="basic_difference">
+      <center><u><h3>Difference</h3></u></center>
+      <div></div>
+      <center><span id="salt_water_difference">[-0]</span></center>
+      <center><span id="salt_difference">[-0]</span></center>
+    </div>
+
+    <div class="better_resources">
+      <center><u><h3>Better Resources</h3></u></center>
+      <!--Peppercorns-->
+      <center><span id="num_peppercorns">Peppercorns: 0pc</span>
+      <span id="peppercorns_per_sec">Per Sec: 0pc/s</span></center>
+      <div></div>
+      <!--Ginger-->
+      <center><span id="num_ginger">Ginger: 0pc</span>
+      <span id="ginger_per_sec">Per Sec: 0pc/s</span></center>
+    </div>
+
+    <div class="better_producers">
+      <center><u><h3>Better Producers</h3></u></center>
+      <!--Birbs-->
+      <button onclick="buyBirb()" class="birb">Buy Birb</button>
+      <div class="birb_stats">
+        <span id="num_birbs">Birbs: 0</span>
+        <span id="birb_cost">Cost: 20ml water, 20g salt</span>
+        <span id="birb_peppercorns_per_sec">Per Sec: 0pc/s</span>
+      </div>
+      <!--Moles-->
+      <div></div>
+      <button onclick="buyMole()" class="mole">Buy Mole</button>
+      <div class="mole_stats">
+        <span id="num_moles">Moles: 0</span>
+        <span id="mole_cost">Cost: 20pc pepper</span>
+        <span id="mole_ginger_per_sec">Per Sec: 0pc/s</span>
+      </div>
+    </div>
+
+    <div class="better_difference">
+      <center><u><h3>Difference</h3></u></center>
+      <div></div>
+      <center><span>[-75%]</span></center>
+    </div>
+
+    <div class="even_better_resources">
+      <center><u><h3>Even Better Resources</h3></u></center>
+      <!--Oregano-->
+      <center><span id="num_oregano">Oregano: 0g</span>
+      <span id="oregano_per_sec">Per Sec: 0g/s</span></center>
+      <div></div>
+      <!--Dill-->
+      <center><span id="num_dill">Dill: 0g</span>
+      <span id="dill_per_sec">Per Sec: 0g/s</span></center>
+    </div>
+
+    <div class="actually_good_producers">
+      <center><u><h3>Actually Good Producers</h3></u></center>
+      <!--Chipmunk-->
+      <button onclick="buyChipmunk()" class="chipmunk">Buy Chipmunk</button>
+      <div class="chipmunk_stats">
+        <span id="num_chipmunks">Chipmunks: 0</span>
+        <span id="chipmunk_cost">Cost: 40pc ginger</span>
+        <span id="chipmunk_oregano_per_sec">Per Sec: 0g/s</span>
+      </div>
+      <!--Rabbit-->
+      <div></div>
+      <button onclick="buyRabbit()" class="rabbit">Buy Rabbit</button>
+      <div class="rabbit_stats">
+        <span id="num_rabbits">Rabbits: 0</span>
+        <span id="rabbit_cost">Cost: 40g oregano</span>
+        <span id="rabbit_dill_per_sec">Per Sec: 0g/s</span>
+      </div>
+    </div>
+
+    <div class="even_better_difference">
+      <center><u><h3>Difference</h3></u></center>
+      <div></div>
+      <center><span>[-75%]</span></center>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

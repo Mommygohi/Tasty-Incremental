@@ -1,0 +1,132 @@
+/*Production, Quantity and Cost Style*/
+
+#salt_water_per_sec, #salt_per_sec, #peppercorns_per_sec, #ginger_per_sec, #oregano_per_sec, #dill_per_sec, #turtle_salt_water_per_sec, #crab_salt_per_sec, #birb_peppercorns_per_sec, #mole_ginger_per_sec, #chipmunk_oregano_per_sec, #rabbit_dill_per_sec {
+  color:#0616c9;
+}
+
+#num_salt_water, #num_salt, #num_peppercorns, #num_ginger, #num_oregano, #num_dill, #num_turtles, #num_crabs, #num_birbs, #num_moles, #num_chipmunks, #num_rabbits {
+  color:#9b870c;
+}
+
+#turtle_cost, #crab_cost, #birb_cost, #mole_cost, #chipmunk_cost, #rabbit_cost {
+  color:green;
+}
+
+/*Stats Hover*/
+
+#num_peppercorns, #num_ginger, #num_oregano, #num_dill, .salt_water_stats, .salt_stats, .turtle_stats, .crab_stats, .birb_stats, .mole_stats, .chipmunk_stats, .rabbit_stats {
+  font-style:normal;
+  display:inline;
+}
+
+#num_peppercorns:hover, #peppercorns_per_sec:hover, #num_ginger:hover, #ginger_per_sec:hover, #num_oregano:hover, #oregano_per_sec:hover, #num_dill:hover, #dill_per_sec:hover, .salt_water:hover + .salt_water_stats, .salt:hover + .salt_stats, .turtle:hover + .turtle_stats, .crab:hover + .crab_stats, .birb:hover + .birb_stats, .mole:hover + .mole_stats, .chipmunk:hover + .chipmunk_stats, .rabbit:hover + .rabbit_stats {
+  font-style:italic;
+}
+
+/*Section Boxes*/
+
+.basic_resources, .basic_producers, .better_resources, .better_producers, .even_better_resources, .actually_good_producers {
+  border:2px dotted black;
+  width:35%;
+  height:90px;
+  float:left;
+}
+
+/*Difference Boxes*/
+
+.basic_difference, .better_difference, .even_better_difference {
+  border:2px dotted black;
+  width:auto;
+  height:90px;
+  float:left;
+}
+
+/*Salt Water Style*/
+
+.salt_water {
+  border: 2px solid darkBlue;
+  background-color:darkBlue;
+  color:white;
+}
+
+.salt_water:hover {
+  background-color:lightBlue;
+  color:black;
+}
+
+/*Salt Style*/
+
+.salt {
+  border: 2px solid pink;
+  background-color:pink;
+  color:white;
+}
+
+.salt:hover {
+  background-color:#ffe9ec;
+  color:black;
+}
+
+/*Turtle Style*/
+
+.turtle {
+  border: 2px solid darkGreen;
+  background-color:darkGreen;
+  color:white;
+}
+
+.turtle:hover {
+  background-color:lightGreen;
+  color:black;
+}
+
+/*Crab Style*/
+
+.crab {
+  border: 2px solid red;
+  background-color:red;
+  color:white;
+}
+
+.crab:hover {
+  background-color:#ff9999;
+  color:black;
+}
+
+/*Birb Style*/
+
+.birb {
+  border: 2px solid #394C00;
+  background-color:#394C00;
+  color:white;
+}
+
+.birb:hover {
+  background-color:#809050;
+  color:black;
+}
+
+/*Mole Style*/
+
+.mole {
+ border: 2px solid brown;
+  background-color:brown;
+  color:white;
+}
+
+.mole:hover {
+  background-color:#b5651d;
+  color:black;
+}
+
+/*Dev Powers and Misc*/
+
+button {
+  border-radius:16px;
+  margin-top:5px;
+  margin-left:5px;
+}
+
+h3 {
+  margin:5px;
+}
